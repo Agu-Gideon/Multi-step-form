@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>side projects| Multi-step form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <!-- Sidebar start -->
+        <div class="sidebar">
+          <div class="sidebarItems">
+            <div class="NumberCycle">1</div>
+            <p class="steps">
+              STEP 1 <br /><span class="stepText">YOUR INFO</span>
+            </p>
+          </div>
+          <div class="sidebarItems">
+            <div class="NumberCycle">2</div>
+            <p class="steps">
+              STEP 2<br /><span class="stepText"> SELECT PLAN</span>
+            </p>
+          </div>
+          <div class="sidebarItems">
+            <div class="NumberCycle">3</div>
+            <p class="steps">
+              STEP 3 <br /><span class="stepText">ADD-ONS</span>
+            </p>
+          </div>
+          <div class="sidebarItems">
+            <div class="NumberCycle">4</div>
+            <p class="steps">
+              STEP 4<br /><span class="stepText">SUMMARY</span>
+            </p>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+        <!-- step1 content start -->
+        <div class="step1">
+          <p class="personalInfoText">Personal info</p>
+          <p class="provideInfo">
+            Please provide your name, email address and phone number.
+          </p>
+          <form class="infoForm">
+            <label for="userName">Name <br /></label>
+            <div class="inputDiv">
+              <input
+                type="text"
+                id="userName"
+                name="name"
+                placeholder="enter your name"
+              />
+            </div>
+            <label for="userMail">Email Address <br /></label>
+            <div class="inputDiv">
+              <input
+                type="email"
+                id="userMail"
+                name="name"
+                placeholder="enter your email address"
+              />
+            </div>
+            <label for="userNumber">Phone Number <br /></label>
+            <div class="inputDiv">
+              <input
+                type="number"
+                id="userNumber"
+                name="name"
+                placeholder="e.g +234 906 9896 889"
+              />
+            </div>
+            <button id="nextButton" type="submit">Next</button>
+          </form>
+        </div>
+        <!-- Step 1 end -->
+        <!-- Step 2 start -->
+        <div class="step2">
+          <p class="personalInfoText">Select your plan</p>
+          <p class="provideInfo">
+            You have the option of monthly or yearly billing.
+          </p>
+          <div class="planBox">
+            <div class="plan">
+              <img src="./assets/images/icon-arcade.svg" class="planIcon" />
+              <p class="planText">
+                Arcade <br />
+                <span class="planSubText">$9/mo</span>
+              </p>
+            </div>
+            <div class="plan">
+              <img src="./assets/images/icon-advanced.svg" class="planIcon" />
+              <p class="planText">
+                Advanced <br />
+                <span class="planSubText">$12/mo</span>
+              </p>
+            </div>
+            <div class="plan">
+              <img src="./assets/images/icon-pro.svg" class="planIcon" />
+              <p class="planText">
+                Pro <br />
+                <span class="planSubText">$15/mo</span>
+              </p>
+            </div>
+          </div>
+          <div class="duration">
+            <p class="month">Monthly</p>
+            <i class="fas fa-toggle-on"></i>
+            <p class="year">Yearly</p>
+          </div>
+          <div class="fowardBackword">
+            <a href=""> <p class="back">Go Back</p></a>
+            <button id="nextButton" type="submit">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+
+        <!-- Dynamically add subscription and add-on selections here -->
+
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+
+        <!-- Step 5 end -->
+      </div>
+    </div>
+  </body>
+</html>

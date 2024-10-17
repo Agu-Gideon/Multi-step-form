@@ -1,0 +1,235 @@
+/*line to import custome fonts*/
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold; /* Bold */
+  font-style: normal;
+}
+/*unerversial styling*/
+* {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+/*personal info styling*/
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef5ff;
+}
+.wrapper {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+/*sidebar styling start*/
+.sidebar {
+  width: 20%;
+  height: 96%;
+  background: url(./assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  align-self: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 30px;
+}
+.sidebarItems {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 15px;
+}
+.NumberCycle {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+.steps {
+  font-size: 14px;
+  color: #7976ff;
+  font-weight: 600;
+}
+.stepText {
+  color: white;
+} /*side bar styling end*/
+/*step1 styling start*/
+.step1 {
+  width: 70%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+  /* background-color: blue; */
+}
+.personalInfoText {
+  color: #174a8b;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+.provideInfo {
+  color: #aaabb2;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.infoForm {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* background-color: #7976ff; */
+}
+label {
+  font-weight: 600;
+  color: #152938;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+.inputDiv {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #b7b8bc;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.inputDiv:hover {
+  border: 1px solid #625aff;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input::placeholder {
+  font-size: 14px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  background-color: #174a8b;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+/* step1 styling ends here */
+/* step2 styling start */
+.step2 {
+  width: 65%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* display: none; */
+  /* background-color: blue; */
+}
+.planBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.plan {
+  width: 120px;
+  height: 140px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 15px;
+}
+.plan:hover {
+  border: 1px solid #625aff;
+  background-color: #eef5ff;
+}
+.planText {
+  font-weight: 500;
+  color: #174a8b;
+  margin-top: 50%;
+}
+.planSubText {
+  font-size: 14px;
+  color: #aaabb2;
+}
+.duration {
+  width: 60%;
+  height: 50px;
+  background-color: #eef5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+.fa-toggle-on {
+  color: #174a8b;
+  transform: rotate(180deg);
+  font-size: 30px;
+}
+.month {
+  font-weight: 500;
+  color: #174a8b;
+}
+.year {
+  color: #aaabb2;
+}
+.back {
+  margin-top: 30px;
+}
+.fowardBackword {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
